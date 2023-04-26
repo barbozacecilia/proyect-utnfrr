@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+	<title>Proyecto de Barboza Cecilia</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+	<link rel="stylesheet" type="text/css" href="styles/estilos.css" media="screen">
+	<script type="text/javascript">
+		var nombre = prompt('¿Cuál es su nombre?');
+		var apellido = prompt('¿Cuál es su apellido?');
+		alert('Disfrute de su estadía en mi página ' + nombre + ' ' + apellido);
+		var rangoHorario = prompt( 'Mencione el horario de contacto en el que me puedo comunicar con usted: mañana (8h a 12h) o tarde (13h a 17h)');
+		var telefono = prompt('¿Cuál es su teléfono? (Por ejemplo: 011-423581)');
+		var email = prompt('¿Cuál es su correo electrónico? (Por ejemplo: hola@gmail.com)');
+		alert('Por favor, no se olvide de revisar los datos proporcionados al final de la página.');
+
+	</script>
+</head>
+
+<body>
+<header>
+	<div id="container_header">
+		<div id="logo">
+			<img src="styles/images/logo.png" alt="logo">
+		</div>
+		<nav id="keypad">
+			<ul>
+				<li><a href="#about_me_section">Sobre mi</a></li>
+				<li><a href="#training_section">Formación</a></li>
+				<li><a href="#skills_section">Habilidades</a></li>
+				<li><a href="#contact_section">Contacto</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+
+<section id= section_start>
+	<div id="presentation_box">
+		<div id="box_title"><h1>Cecilia Mercedes</h1></div>
+		<div id="presentation_image"></div>
+	</div>
+</section>
+
+<section id="about_me_section">
+	<div id="about_me_image">
+		<div id="name_container"><p>I always find a way</p></div>
+	</div>
+	<div id="about_me_container">
+		<div id="about_me_title"><h2>sobre mi</h2></div>
+		<div id="about_me_paragraph1"><p>Me considero una persona con una gran capacidad de innovación y autonomía. Siempre busco la solución de problemas, con propuestas. Tengo una gran adaptabilidad a los cambios.<br/> Una de las cosas que más disfruto es perfeccionarme e investigar sobre todo relacionado a la salud, la educación y la tecnología. </p></div>
+		<div id="about_me_paragraph2"><h3>El gran motor del cambio es la tecnología y la educación.</h3></div>
+	</div>
+</section>
+
+<section id="training_section">
+	<div id="training_container">
+		<div id="training_title"><h2>formación</h2></div>
+		<img id="training_image" alt="imagen de formación" src="styles/images/books.jpg"/>
+	</div>
+	<div id="training_list_container">
+		<div class="training_card">
+			<div class="image_card"><img src="styles/images/logo_nurse0.png" alt="icono de enfermera"></div>
+			<div>
+				<div class="training_card_title"><h2>Enfermera</h2></div>
+				<div class="training_card_paragraph"><p>Estudié para ser Enfermera en un instituto, me recibí y hice mis prácticas en distintos sectores de diferentes hospitales</p></div>
+			</div>
+		</div>
+		<div class="training_card">
+			<div class="image_card"><img src="styles/images/logo_teacher0.png" alt="icono de instituto"></div>
+			<div>
+				<div class="training_card_title"><h2>Profesora</h2></div>
+				<div class="training_card_paragraph"><p>Soy profesora de Biología de educación secundaria he trabajado en distintos colegios</p></div>
+			</div>
+		</div>
+		<div class="training_card">
+			<div class="image_card"><img src="styles/images/logo_computer0.png" alt="icono de computadora"></div>
+			<div>
+				<div class="training_card_title"><h2>En progreso...</h2></div>
+				<div class="training_card_paragraph"><p>Me encuentro estudiando programación</p></div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="skills_section">
+	<div id="skills_container">
+		<div id="skills_title"><h2>habilidades</h2></div>
+		<div id="skills_paragraph">
+			<ul>
+				<li>Sentido de la responsabilidad</li>
+				<li>Capacidad de trabajar en equipo</li>
+				<li>Conocimiento y respeto de las normas</li>
+				<li>Capacidad de actualizar mis conocimientos</li>
+				<li>Organización de cursos y capacitaciones</li>
+				<li>Iniciativa y Creatividad</li>
+			</ul>
+		</div>
+	</div>
+	<img id="skills_image" alt="Imagen de trabajo en equipo" src="styles/images/team_work.jpg"/>
+</section>
+
+<section id="info_section">
+	<div id="info_container">
+		<div id="info_title"><h2>Revisión de datos</h2></div>
+		<div id="info_paragraph">
+			<p> Por favor 	<script type="text/javascript">
+				document.write(nombre)
+			</script>   	<script type="text/javascript">
+				document.write(apellido)
+			</script>, no se olvide de revisar los siguientes datos para que me pueda contactar con usted:</p>
+			<ul>
+				<li>El horario en que me pondré en contacto es durante:
+					<script type="text/javascript">
+						document.write(rangoHorario)
+					</script>
+				</li>
+				<li>El número de telefóno es:
+					<script type="text/javascript">
+						document.write(telefono)
+					</script>
+				</li>
+				<li>El correo electrónico es:
+					<script type="text/javascript">
+						document.write(email)
+					</script>
+				</li>
+			</ul>
+			<p>¡Gracias por chequear los datos proporcionados!</p>
+		</div>
+	</div>
+</section>
+
+<footer>
+	<div id="contact_section">
+		<div id="contact_title"><h2>Contacto</h2></div>
+		<div id="red_container"></div>
+	</div>
+</footer>
+</body>
+</html>
